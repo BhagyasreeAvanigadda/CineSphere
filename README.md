@@ -16,7 +16,7 @@ Movie Recommendation System created using Collaborative Filtering (Website) and 
   1. In the shell/cmd, cd to the directory where requirements.txt is located.
   2. activate your virtualenv. (if any)
   3. run:   ``` pip install -r requirements.txt ```
-  4. run    ```python main.py ```
+  4. run:   ```python main.py ```
 ### Flow Diagram
 <div align='center'>
 <img src = 'flow-diagram.JPG' height="400px">
