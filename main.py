@@ -10,7 +10,7 @@ import pickle
 import requests
 from IPython.display import HTML
 
-# load the nlp model and tfidf vectorizer from disk
+# load the nlp model and tfidf vectorizer from disk app = Flask(__name__)
 filename = 'nlp_model.pkl'
 clf = pickle.load(open(filename, 'rb'))
 vectorizer = pickle.load(open('tranform.pkl','rb'))
@@ -193,5 +193,6 @@ def recommend():
         vote_count=vote_count,release_date=release_date,runtime=runtime,status=status,genres=genres,
         movie_cards=movie_cards,reviews=movie_reviews,casts=casts,cast_details=cast_details)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
+
